@@ -44,8 +44,15 @@ export DB_URL='mongodb://localhost:27017'
 export DB_NAME='fastapistarter'
 ```
 
-The main entry point is main.py, so you can start that file from command line or use whatever execution method is available from your IDE. To install the IDE to interact with GraphQL, look in the SETUP.md for GraphQL Playground installation instructions then simply open the GraphQL Playground to interact with the local server and insert the base url <em>http://127.0.0.1:8000/api</em>. For more detailed instructions, check the wiki.
+The main entry point is main.py, so you can start that file from command line or use whatever execution method is available from your IDE. To install the IDE to interact with GraphQL, look in the SETUP.md for GraphQL Playground installation instructions then simply open the GraphQL Playground to interact with the local server and insert the base url <em>http://127.0.0.1:8000/graph</em>. For more detailed instructions, check the wiki.
 
 ## Dev Notes
 ### Viewing Changes
 Changes under /app may be picked up by the auto-refresh (no need to restart server). To understand how to use the playground to run queries, please reference the following: <a href="https://graphql.org/learn/queries/">GraphQL Queries Reference</a>
+
+### Running Tests
+All tests are located under the <em>tests</em> folder. To run them from terminal, execute the following:
+
+```bash
+pytest tests
+```
