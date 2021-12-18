@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+    mongo:
+        image: mongo
+        restart: always
+        ports:
+            - 27017:27017
+    fastapistarter:
+        image: fastapistarter
+        restart: always
+        ports:
+            - 8000:8000
+            - 8001:8001
+        links:
+            - mongo
+        environment:
+            - PORT=8000
+            - DB_URL=mongodb://mongo:27017
+            - DB_NAME=fastapistarter
