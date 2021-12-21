@@ -23,10 +23,10 @@ docker run -d --name fastapistarter -p 8000:8000 -p 8001:8001 fastapistarter
 ## Using Heroku
 If you are pushing to your personal stack on Heroku, you'll need to run the dockerization steps above to build the base image and then follow up with the Heroku containerization steps below.
 
-'''bash
+```bash
 heroku container:push --recursive
 heroku container:release web
-'''
+```
 
 <em>Note: You must do a heroku login or use API tokens to push to the container registry</em>
 
