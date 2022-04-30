@@ -1,5 +1,5 @@
 # FastAPI + GraphQL Starter 
-A python starter project using FastAPI and GraphQL. This project leverages docker for containerization and provides the scripts to deploy to Heroku. The starter is created for and used in the <a href="/">Building Python Apps with FastAPI</a> book by <a href="https://eidanrosado.com">Eidan J. Rosado</a>.
+A python starter project using FastAPI and GraphQL. This project leverages docker for containerization and was the initial foundation for the complete project, <a href="https://github.com/CloudBytesCollection/sample-fastapi-graphql-book-api">sample-fastapi-graphql-book-api</a>. The starter is created for and used in the <a href="https://www.amazon.com/dp/B09Z7CSDRX">Building Serverless Python Apps Using FastAPI and AWS</a> book by <a href="https://eidanrosado.com">Eidan J. Rosado</a>.
 
 ### Running Services with Docker
 To avoid setting up MongoDB and other such services locally, the team uses Docker. You'll need to install Docker to proceed pulling the image from the team's hub. Contact one of the team admins for access to the hub. To start peripheral services simply execute the following:
@@ -44,7 +44,7 @@ export DB_URL='mongodb://localhost:27017'
 export DB_NAME='fastapistarter'
 ```
 
-The main entry point is main.py, so you can start that file from command line or use whatever execution method is available from your IDE. To install the IDE to interact with GraphQL, look in the SETUP.md for GraphQL Playground installation instructions then simply open the GraphQL Playground to interact with the local server and insert the base url <em>http://127.0.0.1:8000/graph</em>. For more detailed instructions, check the wiki.
+The main entry point is main.py, so you can start that file from command line or use whatever execution method is available from your IDE. To install the IDE to interact with GraphQL, look in the SETUP.md for GraphQL Playground installation instructions then simply open the GraphQL Playground to interact with the local server and insert the base url <em>http://127.0.0.1:8000/graph</em>.
 
 ## Dev Notes
 ### Viewing Changes
